@@ -97,5 +97,67 @@ let list = [1,2,3];
 triBulleReverse(list);
 console.log(list[0]);
 
+class Ferme
+{
+    constructor(adresse, animals){
+        this._adresse = adresse;
+        this._animals = animals;
+    }
+}
+
+class Animal
+{
+    constructor(nom, nbPattes)
+    {
+        this._nom = nom;
+        this.#_nbPattes = nbPattes;
+
+    }
+
+    Manger()
+    {
+        console.log(this._nom + " mange")
+
+    }
+
+    Cris()
+    {
+
+    }
+
+
+
+}
+
+class Poulet extends Animal
+{
+    constructor(nom, nbPattes)
+    {
+        super( nom, nbPattes);
+    }
+
+    Cris()
+    {
+        console.log("kek kek");
+    }
+
+
+}
+
+class Vache extends Animal
+{
+    constructor(nom, nbPattes)
+    {
+        super( nom, nbPattes);
+    }
+
+    Cris()
+    {
+        console.log("MeuuuH");
+    }
+
+
+}
+
 
 
